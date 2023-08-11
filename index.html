@@ -12,7 +12,11 @@
   <h1><strong>Platypus: Quick, Cheap, and Powerful Fine-tuning of LLMs</strong></h1>
   
   <p id="authors"><span> <a href="https://www.arielnlee.com/">Ariel N. Lee<small>*</small></a> <a href="https://www.colejhunter.com/">Cole J. Hunter<small>*</small></a><a href="https://natanielruiz.github.io/"></a></span><a href="https://natanielruiz.github.io/">Nataniel Ruiz<small>†</small></a><br><br>
+<<<<<<< Updated upstream
 <small><small>* Equal Contribution </small></small><br><small><small> † NR is currently at Google and his contributions were done as work at BU prior to his tenure at the company.</small></small><br>
+=======
+<small><small>* Equal Contribution.</small></small><br><small><small>† NR is currently at Google and his contributions were done as work at BU prior to his tenure at the company.</small></small><br>
+>>>>>>> Stashed changes
     <br>
   <span style="font-size: 24px">Boston University
   </span></p>
@@ -35,7 +39,7 @@
 
 <div class="content">
   <h2 style="text-align:center;">Abstract</h2>
-<p>We present <strong>Platypus</strong>, a family of fine-tuned and merged Large Language Models (LLMs) that achieves the strongest performance and currently stands at first place in HuggingFace's <a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard" target="_blank">Open LLM Leaderboard</a> as of the release date of this work. In this tech report we describe (1) our curated dataset <strong>Open-Platypus</strong>, that is a subset of other open datasets and which <em>we release to the public</em> (2) our process of fine-tuning and merging LoRA modules in order to conserve the strong prior of pretrained LLMs, while bringing specific domain knowledge to the surface (3) our efforts in checking for test data leaks and contamination in the training data, which can inform future research. Specifically, the Platypus family achieves strong performance in quantitative LLM metrics across model sizes, topping several public leaderboards (maybe "topping the global leaderboard" since we haven't officially submitted models to any other leaderboards?) while using just a fraction of the fine-tuning data and overall compute that are required for other state-of-the-art fine-tuned LLMs. In particular, a 13B Platypus model can be trained on <em>a single</em> A100 GPU using 25k questions in 5 hours. This is a testament of the quality of our Open-Platypus dataset, and opens opportunities for more improvements in the field.</p>
+<p>We present <strong>Platypus</strong> a family of fine-tuned and merged Large Language Models (LLMs) that achieves the strongest performance and currently stands at first place in HuggingFace's <a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard" target="_blank">Open LLM Leaderboard</a> as of the release date of this work. In this work we describe (1) our curated dataset <strong>Open-Platypus</strong>, that is a subset of other open datasets and which <em>we release to the public</em> (2) our process of fine-tuning and merging LoRA modules in order to conserve the strong prior of pretrained LLMs, while bringing specific domain knowledge to the surface (3) our efforts in checking for test data leaks and contamination in the training data, which can inform future research. Specifically, the Platypus family achieves strong performance in quantitative LLM metrics across model sizes, topping the global Open LLM leaderboard while using just a fraction of the fine-tuning data and overall compute that are required for other state-of-the-art fine-tuned LLMs. In particular, a 13B Platypus model can be trained on <em>a single</em> A100 GPU using 25k questions in 5 hours. This is a testament of the quality of our Open-Platypus dataset, and opens opportunities for more improvements in the field.</p>
 </div>
 
 <div class="content">
