@@ -62,7 +62,6 @@
     table {
         width: 100%;
         border-collapse: collapse;
-        font-family: Arial, sans-serif;
     }
     table, th, td {
         border: 1px solid #e0e0e0;
@@ -210,12 +209,12 @@
   <h2>Fine-tuning & Merging</h2> <p>
 After refining our dataset, we center on two methods: Low Rank Approximation (LoRA) training and Parameter-Efficient Fine-Tuning (PEFT) library. Unlike full fine-tuning, LoRA preserves pre-trained model weights, integrating rank decomposition matrices in transformer layers. This cuts down trainable parameters, saving on training time and cost.
 
-Initially, our fine-tuning honed in on attention modules like <code>v_proj</code>, <code>q_proj</code>, <code>k_proj</code>, and <code>o_proj</code>. Later, based on insights from He et al., we transitioned to <code>gate_proj</code>, <code>down_proj</code>, and <code>up_proj</code> modules. These showed better results except when trainable parameters were less than 0.1% of the total. We applied this uniformly to both our 13B and 70B models, which resulted in 0.27% and 0.2% trainable parameters. The only variance was the initial learning rate between these models. For in an in depth breakdown of our pipeline, pleaase see the paper. </p>
+Initially, our fine-tuning honed in on attention modules like <code>v_proj</code>, <code>q_proj</code>, <code>k_proj</code>, and <code>o_proj</code>. Later, based on insights from He et al., we transitioned to <code>gate_proj</code>, <code>down_proj</code>, and <code>up_proj</code> modules. These showed better results except when trainable parameters were less than 0.1% of the total. We applied this uniformly to both our 13B and 70B models, which resulted in 0.27% and 0.2% trainable parameters. The only variance was the initial learning rate between these models. For an in depth breakdown of our pipeline, pleaase refer to the paper. </p>
 </div>
 
 <div class="content">
   <h2>Results</h2>
-  <p></p>Hugging Face Open LLM Leaderboard as of 8/10/23. For additional details regarding results, please refer to the paper. <br><br>
+  <p></p>Hugging Face Open LLM Leaderboard as of 8/10/23. <br><br>
   <img src="./Platypus_files/HF.png" style="width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
